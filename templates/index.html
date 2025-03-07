@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+ <h1>Upload an image to convert to ascii</h1>
+ <form action="/" method="post" enctype="multipart/form-data">    
+<input type="file" name="image" required>
+<button type="submit"> Upload </button>
+</form>
+    {% if ascii_str %}
+    <h2>Generated ascii art</h2>
+    <pre>{{ ascii_str }}</pre>
+    {% endif %}
+</body>
+</html>
